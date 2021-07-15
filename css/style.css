@@ -265,6 +265,7 @@ a {
 }
 
 .column__list {
+  position: relative;
   margin: 340px 0 230px 0;
 }
 
@@ -307,21 +308,18 @@ a {
 footer {
   position: relative;
   background-image: url(../img/footer.jpg);
-}
-
-.footer__inner {
-  position: relative;
+  padding-top: 350px;
 }
 
 .insert {
   position: absolute;
-  top: -80px;
+  top: -172px;
   left: 0;
+  z-index: 1;
   padding: 70px 289px 70px 164px;
   background: #fff;
   min-width: 1245px;
-  box-shadow: 0 100px 200px -50px #353a29;
-  display: none;
+  box-shadow: 0 100px 130px -50px #353a29;
 }
 
 .insert h2 {
@@ -330,9 +328,105 @@ footer {
   margin: 0 0 50px 0;
 }
 
+.footer__adress {
+  max-width: 452px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 52px;
+}
+
 .footer__adress h3 {
   font-size: 16px;
   font-weight: 300;
-  color: #B6C197;
-  
+  color: #b6c197;
+}
+
+.footer__adress span {
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #5d6544;
+  border-bottom: 1px solid #5d6544;
+  padding-top: 60px;
+}
+
+.footer h3 {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  padding-bottom: 21px;
+  margin: 0;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer li,
+.get span {
+  font-size: 16px;
+  font-weight: 300;
+  color: #b6c197;
+  padding-bottom: 15px;
+  display: block;
+}
+
+.footer li:last-child {
+  padding-bottom: 60px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.servises a,
+.help a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 300;
+  color: #b6c197;
+}
+
+.get {
+  max-height: 232px;
+  border-left: 1px solid #5d6544;
+  padding-left: 110px;
+}
+
+.get span {
+  padding-bottom: 23px;
+}
+
+.get a {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.social {
+  display: flex;
+}
+
+.social img {
+  padding: 24px 20px 0 0;
+}
+
+.footer__basement {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0 25px 0;
+}
+
+.cophyright {
+  font-size: 14px;
+  font-weight: 300;
+  color: #b5c096;
 }
