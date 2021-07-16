@@ -1,0 +1,83 @@
+/* Light theme */
+.light-theme {
+  background-color: rgb(255, 255, 255);
+  color: #000;
+}
+
+.light-theme .header-body {
+  background-color: #fff;
+  border-bottom: 1px solid #8f8f8f;
+}
+
+.light-theme .header-body a {
+  color: #828282;
+}
+
+.light-theme .header-body a:hover {
+  color: black;
+}
+
+.light-theme .language a {
+  color: black;
+}
+
+.light-theme .programs {
+  color: #828282;
+}
+
+.light-theme .portfolio {
+  background: #f6f6f6;
+}
+
+.light-theme .text-portfolio a {
+  color: black;
+}
+
+.light-theme .button {
+  background: #000;
+  color: white;
+}
+
+.light-theme .subscribe {
+  color: #828282;
+}
+
+/* Dark theme */
+.dark-theme {
+  background-color: #26242b;
+  color: #f2f2f2;
+}
+
+.dark-theme .header-body {
+  background-color: #373540;
+  border-bottom: 1px solid #ffffff;
+}
+
+.dark-theme .header-body a {
+  color: #a5a5a5;
+}
+
+.dark-theme .header-body a:hover {
+  color: rgb(255, 255, 255);
+}
+
+.dark-theme .language a {
+  color: rgb(255, 255, 255);
+}
+
+.dark-theme .portfolio {
+  background: #373540;
+}
+
+.dark-theme .text-portfolio a {
+  color: #f2f2f2;
+}
+
+.dark-theme .button {
+  background: #f2f2f2;
+  color: #373540;
+}
+
+.dark-theme .subscribe {
+  color: #828282;
+}
