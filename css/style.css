@@ -48,10 +48,6 @@ body {
   padding-right: 150px;
 }
 
-.hidden {
-  display: none;
-}
-
 button {
   padding: 0;
   border: none;
@@ -216,7 +212,7 @@ form {
   font-weight: 700;
 }
 
-.img {
+.social-img {
   margin: 86px 0 45px 0;
   display: flex;
   justify-content: space-around;
@@ -225,6 +221,10 @@ form {
 
 .subscribe {
   font-size: 14px;
+}
+
+.hidden {
+  display: none;
 }
 
 @media (max-width: 1200px) {

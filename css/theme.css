@@ -33,6 +33,10 @@
   color: black;
 }
 
+.light-theme .project img {
+  box-shadow: 0 25px 50px -7px #cfcfcf;
+}
+
 .light-theme .button {
   background: #000;
   color: white;
@@ -71,6 +75,10 @@
 
 .dark-theme .text-portfolio a {
   color: #f2f2f2;
+}
+
+.dark-theme .project img {
+  box-shadow: 0 20px 50px -7px #1b1b1b;
 }
 
 .dark-theme .button {

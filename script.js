@@ -7,9 +7,9 @@ const bgImgs = document.querySelectorAll('.bg-img')
 const bgLights = document.querySelectorAll('.bg-light')
 const bgDarks = document.querySelectorAll('.bg-dark')
 
-const socialImgs = document.querySelectorAll('social-img')
-const socialLights = document.querySelectorAll('social-light')
-const socialDarks = document.querySelectorAll('social-dark')
+let socialImgs = document.querySelectorAll('.social-img')
+let socialLight = document.querySelector('.social-light')
+let socialDark = document.querySelector('.social-dark')
 
 for (let themeButton of themeButtons) {
   themeButton.onclick = function () {
@@ -42,24 +42,13 @@ for (let themeButton of themeButtons) {
       }
     }
 
-    for (socialImg of socialImgs) {
-      if (page.classList.contains('dark-theme')) {
-        for (socialDark of socialDarks) {
-          socialDark.classList.add('hidden')
-        }
-        for (socialLight of socialLights) {
-          socialLight.classList.remove('hidden')
-        }
-      } else {
-        for (socialDark of socialDarks) {
-          socialDark.classList.remove('hidden')
-        }
-        for (socialLight of socialLights) {
-          socialLight.classList.add('hidden')
-        }
-      }
+    if (page.classList.contains('dark-theme')) {
+      socialLight.classList.add('hidden')
+      socialDark.classList.remove('hidden')
+    } else {
+      socialLight.classList.remove('hidden')
+      socialDark.classList.add('hidden') 
     }
-
 
   }
 }
